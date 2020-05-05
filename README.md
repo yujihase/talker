@@ -3,6 +3,8 @@ Talker is a web browser based simple video meeting package using WebRTC.
 
 See [Demo](https://talker.tida.me/demo/).
 
+Product version is [here](https://talker.tida.me/).
+
 ## Files
 
 `talkerd.js` is a daemon software. Execute under a node.js environment.
