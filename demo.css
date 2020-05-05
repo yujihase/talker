@@ -1,0 +1,117 @@
+/**
+ * demo.css v1
+ *
+ * © 2020 Yuji Hase
+ *
+ * Released under the MIT license.
+ * see https://opensource.org/licenses/MIT
+ */
+
+html {
+  font-size: 15px;
+}
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: hsl(0, 0%, 20%);
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+a {
+  color: hsl(46, 100%, 48%);
+  text-decoration: none;
+}
+button, input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 1rem;
+  height: 40px;
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+button {
+  display: inline-block;
+  padding: 0 30px;
+  color: hsl(0, 0%, 100%);
+  line-height: 40px;
+  background-color: hsl(46, 100%, 48%);
+  border-color: hsl(46, 100%, 48%);
+  cursor: pointer;
+}
+button:focus, button:hover {
+  border-color: hsl(46, 100%, 43%);
+  background-color: hsl(46, 100%, 43%);
+  outline: 0;
+}
+button:disabled {
+  border-color: hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 85%);
+  outline: 0;
+}
+input[type=text] {
+  width: 100%;
+  padding: 0 10px;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+}
+input[type=text]:focus {
+  border: 1px solid hsl(46, 100%, 48%);
+  outline: 0;
+}
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+#main {
+  flex-grow: 1;
+}
+#footer {
+  flex-grow: 0;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+}
+#caution {
+  color: hsl(0, 100%, 60%);
+}
+#caution:empty {
+  display: none;
+}
+#room {
+  display: none;
+}
+#videos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+#videos video {
+  margin: 0.5rem;
+  width: 240px;
+  height: 180px;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 4px;
+  border: 1px solid hsl(0, 0%, 75%);
+  box-sizing: border-box;
+  transform: scaleX(-1); /* Flip horizontally */
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Talker Demo</title>
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <div id="container">
+    <div id="main">
+      <h1>Talker Demo</h1>
+      <p id="caution"></p>
+      <form id="entrance">
+        <label for="roomIdField">Room name</label>
+        <input id="roomIdField" type="text">
+        <button id="enter">Enter</button>
+      </form>
+      <div id="room">
+        <button id="leave">Leave <span id="roomId"></span></button>
+        <div id="videos"></div>
+      </div>
+    </div>
+    <div id="footer">
+      © 2020 <a href="https://twitter.com/yujihase" target="_new">Yuji Hase</a>
+      Released under the MIT license.
+    </div>
+  </div>
+  <script src="talker.js"></script>
+  <script src="demo.js"></script>
+</body>
+</html>
